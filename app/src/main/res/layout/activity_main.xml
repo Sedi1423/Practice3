@@ -8,9 +8,17 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="272dp"
         android:layout_height="47dp"
+        android:fontFamily="@font/audiowide"
         android:text="WEATHER HACKER"
+        android:textColor="#009688"
+        android:textColorHighlight="#009688"
+        android:textColorHint="#4CAF50"
+        android:textColorLink="#00BCD4"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -20,10 +28,58 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="231dp"
-        android:layout_height="168dp"
-        app:srcCompat="@drawable/search_results_for_seasons___flaticon"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="63dp" />
+        android:layout_width="171dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/search_results_for_seasons___flaticon" />
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="NAME"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/studentnumberInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="STUDENT NO."
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameInput" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="99dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#D30404"
+        android:text="EXIT"
+        app:layout_constraintStart_toEndOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/studentnumberInput" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="102dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="59dp"
+        android:backgroundTint="#1D1C1C"
+        android:text="LOGIN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentnumberInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,91 +35,105 @@ class MainScreen : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main_screen)
 
-         btnTemeratureAverage=findViewById(R.id.btnTemeratureAverage)
-         AverageOutput=findViewById(R.id.AverageOutput)
-        btnExit2=findViewById(R.id.btnExit2)
-         btnNext=findViewById(R.id.btnNext)
-          btnClear=findViewById(R.id.btnClear)
+        btnTemeratureAverage = findViewById(R.id.btnTemeratureAverage)
+        AverageOutput = findViewById(R.id.AverageOutput)
+        btnExit2 = findViewById(R.id.btnExit2)
+        btnNext = findViewById(R.id.btnNext)
+        btnClear = findViewById(R.id.btnClear)
 
-         MondayTemperatureInput=findViewById(R.id.MondayTemperatureInput)
-        TuesdayTemperatureInput=findViewById(R.id.TuesdayTemperatureInput)
-         WednesdayTemperatureInput=findViewById(R.id.WednesdayTemperatureInput)
-         ThursdayTemperatureInput=findViewById(R.id.ThursdayTemperatureInput)
-         FridayTemperatureInput=findViewById(R.id.FridayTemperatureInput)
-         SaturdayTemperatureInput=findViewById(R.id. SaturdayTemperatureInput)
-        SundayTemperatureInput=findViewById(R.id.SundayTemperatureInput)
+        MondayTemperatureInput = findViewById(R.id.MondayTemperatureInput)
+        TuesdayTemperatureInput = findViewById(R.id.TuesdayTemperatureInput)
+        WednesdayTemperatureInput = findViewById(R.id.WednesdayTemperatureInput)
+        ThursdayTemperatureInput = findViewById(R.id.ThursdayTemperatureInput)
+        FridayTemperatureInput = findViewById(R.id.FridayTemperatureInput)
+        SaturdayTemperatureInput = findViewById(R.id.SaturdayTemperatureInput)
+        SundayTemperatureInput = findViewById(R.id.SundayTemperatureInput)
 
 
-        btnTemeratureAverage.setOnClickListener{
+        btnTemeratureAverage.setOnClickListener {
 
-            val temperatureInputs = arrayOf(MondayTemperatureInput,TuesdayTemperatureInput,WednesdayTemperatureInput,ThursdayTemperatureInput
-                ,FridayTemperatureInput,SaturdayTemperatureInput,SundayTemperatureInput)
+            val temperatureInputs = arrayOf(
+                MondayTemperatureInput,
+                TuesdayTemperatureInput,
+                WednesdayTemperatureInput,
+                ThursdayTemperatureInput,
+                FridayTemperatureInput,
+                SaturdayTemperatureInput,
+                SundayTemperatureInput
+            )
 
-            var totalSum=0.0
-            var validCount=0
-            var hasEmptyFields= false
+            var totalSum = 0.0
+            var validCount = 0
+            var hasEmptyFields = false
 
             for (inputField in temperatureInputs) {
                 val inputString = inputField.text.toString().trim()
 
                 if (inputString.isNotEmpty()) {
                     val tempValue = inputString.toDoubleOrNull()
-                    if (tempValue != null)
+                    if (tempValue != null) {
                         totalSum += tempValue
-                    validCount++
+                        validCount++
+                    }
 
+
+                } else {
+                    hasEmptyFields = true
                 }
-            else{ hasEmptyFields=true}
-
-                if( hasEmptyFields){
-                    Toast.makeText(this,"ENTER VALUES FOR ALL DAYS",Toast.LENGTH_SHORT).show()
-
-
-
-
-
-
-                }
-if (validCount>0){
-
-    val weeklyAverage= totalSum/ validCount
-    AverageOutput.text=String.format("%.if celcius ",weeklyAverage)
-
-            }else{
-             AverageOutput.text="0.0 celcius"
-    Toast.makeText(this,"enter atleast one valid temperature",Toast.LENGTH_SHORT).show()
-
             }
 
 
+                    if (hasEmptyFields) {
+                        Toast.makeText(this, "ENTER VALUES FOR ALL DAYS", Toast.LENGTH_SHORT).show()
+
+                    }
+                    if (validCount > 0) {
+
+                        val weeklyAverage = totalSum / validCount
+                        AverageOutput.text = String.format("%.1f celcius ", weeklyAverage)
+
+                    } else {
+                        AverageOutput.text = "0.0 celcius"
+                        Toast.makeText(
+                            this,
+                            "enter atleast one valid temperature",
+                            Toast.LENGTH_SHORT
+                        ).show()
+
+                    }
+
+
+
+            btnExit2.setOnClickListener {
+                finishAffinity()
+
 
             }
+            btnNext.setOnClickListener {
 
+                val intent = Intent(this, Detailscreen::class.java)
+                startActivity(intent)
+
+
+            }
+            btnClear.setOnClickListener {
+                val temperatureInputs = arrayOf(
+                    MondayTemperatureInput,
+                    TuesdayTemperatureInput,
+                    WednesdayTemperatureInput,
+                    ThursdayTemperatureInput,
+                    FridayTemperatureInput,
+                    SaturdayTemperatureInput,
+                    SundayTemperatureInput
+                )
+
+                for (inputField in temperatureInputs) {
+                    inputField.text.clear()
+                    AverageOutput.text = ""
+
+
+                }
+
+            }
         }
-
-
-
-        btnExit2.setOnClickListener{
-            finishAffinity()
-
-
-        }
-        btnNext.setOnClickListener{
-
-            val intent = Intent(this, Detailscreen::class.java)
-            startActivity(intent)
-
-
-        }
-        btnClear.setOnClickListener{
-            val temperatureInputs = arrayOf(MondayTemperatureInput,TuesdayTemperatureInput,WednesdayTemperatureInput,ThursdayTemperatureInput
-                ,FridayTemperatureInput,SaturdayTemperatureInput,SundayTemperatureInput)
-
-            for (inputField in temperatureInputs)
-            inputField.text.clear()}
-         AverageOutput.text=""
-
-
-        }
-
-    }
+        }}

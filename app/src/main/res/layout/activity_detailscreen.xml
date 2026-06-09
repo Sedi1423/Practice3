@@ -33,46 +33,56 @@
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/audiowide"
         android:text="Friday"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="417dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
         android:fontFamily="@font/audiowide"
         android:text="Thursday"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="369dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="27dp"
         android:fontFamily="@font/audiowide"
         android:text="Wednesday"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="317dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/audiowide"
         android:text="Tuesday"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="272dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/audiowide"
         android:text="Monday"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="218dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView2"
@@ -105,6 +115,7 @@
         android:layout_marginStart="153dp"
         android:layout_marginTop="84dp"
         android:backgroundTint="#03A9F4"
+        android:fontFamily="@font/audiowide"
         android:text=" Back to main "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SundayMinOutput" />
@@ -122,11 +133,13 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="12dp"
         android:background="@color/white"
         android:fontFamily="@font/audiowide"
         android:text="Maximum"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="188dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/textView13"
@@ -153,33 +166,41 @@
         android:id="@+id/MondayMinOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="11dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="218dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
         android:id="@+id/TuesdayMinOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="35dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="272dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/MondayMinOutput" />
 
     <TextView
         android:id="@+id/WednesdayMinOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="26dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="317dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/TuesdayMinOutput" />
 
     <TextView
         android:id="@+id/ThursdayMinOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="33dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="369dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/WednesdayMinOutput" />
 
     <TextView
         android:id="@+id/FridayMinOutput"
@@ -215,33 +236,41 @@
         android:id="@+id/MondayMaxOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="14dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="220dp" />
+        app:layout_constraintStart_toEndOf="@+id/MondayMinOutput"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/TuesdayMaxOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="32dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="272dp" />
+        app:layout_constraintStart_toEndOf="@+id/TuesdayMinOutput"
+        app:layout_constraintTop_toBottomOf="@+id/MondayMaxOutput" />
 
     <TextView
         android:id="@+id/WednesdayMaxOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="26dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="210dp"
-        tools:layout_editor_absoluteY="317dp" />
+        app:layout_constraintStart_toEndOf="@+id/WednesdayMinOutput"
+        app:layout_constraintTop_toBottomOf="@+id/TuesdayMaxOutput" />
 
     <TextView
         android:id="@+id/ThursdayMaxOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="32dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="368dp" />
+        app:layout_constraintStart_toEndOf="@+id/ThursdayMinOutput"
+        app:layout_constraintTop_toBottomOf="@+id/WednesdayMaxOutput" />
 
     <TextView
         android:id="@+id/FridayMaxOutput"
@@ -275,33 +304,41 @@
         android:id="@+id/MondayConditionOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="3dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="304dp"
-        tools:layout_editor_absoluteY="220dp" />
+        app:layout_constraintStart_toEndOf="@+id/MondayMaxOutput"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
         android:id="@+id/TuesdayConditionOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="33dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="304dp"
-        tools:layout_editor_absoluteY="272dp" />
+        app:layout_constraintStart_toEndOf="@+id/TuesdayMaxOutput"
+        app:layout_constraintTop_toBottomOf="@+id/MondayConditionOutput" />
 
     <TextView
         android:id="@+id/WednesdayConditionOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="26dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="304dp"
-        tools:layout_editor_absoluteY="317dp" />
+        app:layout_constraintStart_toEndOf="@+id/WednesdayMaxOutput"
+        app:layout_constraintTop_toBottomOf="@+id/TuesdayConditionOutput" />
 
     <TextView
         android:id="@+id/ThursdayConditionOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="32dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="313dp"
-        tools:layout_editor_absoluteY="369dp" />
+        app:layout_constraintStart_toEndOf="@+id/ThursdayMaxOutput"
+        app:layout_constraintTop_toBottomOf="@+id/WednesdayConditionOutput" />
 
     <TextView
         android:id="@+id/FridayConditionOutput"

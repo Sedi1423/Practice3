@@ -28,8 +28,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="171dp"
-        android:layout_height="105dp"
+        android:layout_width="180dp"
+        android:layout_height="119dp"
         android:layout_marginStart="120dp"
         android:layout_marginTop="7dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,6 +43,7 @@
         android:layout_marginStart="88dp"
         android:layout_marginTop="88dp"
         android:ems="10"
+        android:fontFamily="@font/audiowide"
         android:hint="NAME"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,6 +56,7 @@
         android:layout_marginStart="84dp"
         android:layout_marginTop="23dp"
         android:ems="10"
+        android:fontFamily="@font/audiowide"
         android:hint="STUDENT NO."
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,6 +69,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="60dp"
         android:backgroundTint="#D30404"
+        android:fontFamily="@font/audiowide"
         android:text="EXIT"
         app:layout_constraintStart_toEndOf="@+id/btnLogin"
         app:layout_constraintTop_toBottomOf="@+id/studentnumberInput" />
@@ -78,6 +81,7 @@
         android:layout_marginStart="58dp"
         android:layout_marginTop="59dp"
         android:backgroundTint="#1D1C1C"
+        android:fontFamily="@font/audiowide"
         android:text="LOGIN"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/studentnumberInput" />

@@ -32,44 +32,50 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnTemeratureAverage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="46dp"
-        android:text="Button"
+        android:backgroundTint="#4CAF50"
+        android:fontFamily="@font/audiowide"
+        android:text="Calculate average"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="586dp" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="37dp"
+        android:backgroundTint="#00BCD4"
+        android:fontFamily="@font/audiowide"
+        android:text="Clear"
+        app:layout_constraintStart_toEndOf="@+id/btnNext"
+        app:layout_constraintTop_toBottomOf="@+id/AverageOutput" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="33dp"
+        android:backgroundTint="#FF5722"
+        android:fontFamily="@font/audiowide"
+        android:text="Next"
+        app:layout_constraintStart_toEndOf="@+id/btnExit2"
+        app:layout_constraintTop_toBottomOf="@+id/btnTemeratureAverage" />
+
+    <Button
+        android:id="@+id/btnExit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="33dp"
+        android:backgroundTint="#E92A2A"
+        android:fontFamily="@font/audiowide"
+        android:text="Exit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText8" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="46dp"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText8" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="9dp"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="9dp"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btnTemeratureAverage" />
 
     <TextView
         android:id="@+id/textView5"
@@ -77,6 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
         android:layout_marginTop="105dp"
+        android:fontFamily="@font/audiowide"
         android:text="Monday"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -86,7 +93,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="41dp"
+        android:fontFamily="@font/audiowide"
         android:text="Tuesday"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -96,7 +104,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="59dp"
+        android:fontFamily="@font/audiowide"
         android:text="Wednesday"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -105,115 +114,144 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/audiowide"
         android:text="Thursday"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="338dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/audiowide"
         android:text="Friday"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="411dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="37dp"
+        android:fontFamily="@font/audiowide"
         android:text="Saturday"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="467dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/audiowide"
         android:text="Sunday"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="526dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/MondayTemperatureInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:hint="Enter Temperature"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/TuesdayTemperatureInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:hint="Enter Temperature"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/MondayTemperatureInput" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/WednesdayTemperatureInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="28dp"
         android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:hint="Enter Temperature"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/TuesdayTemperatureInput" />
 
     <EditText
-        android:id="@+id/editTextText5"
+        android:id="@+id/ThursdayTemperatureInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="10dp"
         android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:hint="Enter Temperature"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+        app:layout_constraintTop_toBottomOf="@+id/WednesdayTemperatureInput" />
 
     <EditText
-        android:id="@+id/editTextText6"
+        android:id="@+id/FridayTemperatureInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:hint="Enter Temperature"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+        app:layout_constraintTop_toBottomOf="@+id/ThursdayTemperatureInput" />
 
     <EditText
-        android:id="@+id/editTextText7"
+        android:id="@+id/SaturdayTemperatureInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:hint="Enter Temperature"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
+        app:layout_constraintTop_toBottomOf="@+id/FridayTemperatureInput" />
 
     <EditText
-        android:id="@+id/editTextText8"
+        android:id="@+id/SundayTemperatureInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="12dp"
         android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:hint="Enter Temperature"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
+        app:layout_constraintTop_toBottomOf="@+id/SaturdayTemperatureInput" />
+
+    <TextView
+        android:id="@+id/AverageOutput"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/black"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="585dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

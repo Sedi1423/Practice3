@@ -132,7 +132,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/maxOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -140,11 +140,11 @@
         android:background="@color/white"
         android:fontFamily="@font/audiowide"
         android:text="Maximum"
-        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintStart_toEndOf="@+id/minOutput"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/conditionsOutput"
         android:layout_width="119dp"
         android:layout_height="40dp"
         android:layout_marginStart="22dp"
@@ -152,11 +152,11 @@
         android:background="@color/white"
         android:fontFamily="@font/audiowide"
         android:text="Weather condition"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toEndOf="@+id/maxOutput"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/minOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="67dp"
@@ -174,7 +174,7 @@
         android:layout_marginTop="11dp"
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/minOutput" />
 
     <TextView
         android:id="@+id/TuesdayMinOutput"
@@ -244,7 +244,7 @@
         android:layout_marginTop="14dp"
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/MondayMinOutput"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/maxOutput" />
 
     <TextView
         android:id="@+id/TuesdayMaxOutput"
@@ -314,7 +314,7 @@
         android:layout_marginTop="3dp"
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/MondayMaxOutput"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/conditionsOutput" />
 
     <TextView
         android:id="@+id/TuesdayConditionOutput"

@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
             val intent = Intent(this, MainScreen::class.java)
             startActivity(intent)
-        
+
 
 
 

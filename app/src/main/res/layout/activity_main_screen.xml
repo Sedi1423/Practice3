@@ -36,11 +36,13 @@
         android:id="@+id/btnTemeratureAverage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="#4CAF50"
         android:fontFamily="@font/audiowide"
         android:text="Calculate average"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="586dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SundayTemperatureInput" />
 
     <Button
         android:id="@+id/btnClear"
@@ -250,9 +252,11 @@
         android:id="@+id/AverageOutput"
         android:layout_width="133dp"
         android:layout_height="45dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="27dp"
         android:background="@color/black"
         android:backgroundTint="@color/black"
         android:text="TextView"
-        tools:layout_editor_absoluteX="235dp"
-        tools:layout_editor_absoluteY="585dp" />
+        app:layout_constraintStart_toEndOf="@+id/btnTemeratureAverage"
+        app:layout_constraintTop_toBottomOf="@+id/SundayTemperatureInput" />
 </androidx.constraintlayout.widget.ConstraintLayout>

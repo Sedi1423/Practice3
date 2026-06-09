@@ -109,7 +109,7 @@
         app:srcCompat="@drawable/search_results_for_seasons___flaticon" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnBacktomain"
         android:layout_width="157dp"
         android:layout_height="75dp"
         android:layout_marginStart="153dp"

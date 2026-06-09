@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practice3">
         <activity
+            android:name=".Detailscreen"
+            android:exported="false" />
+        <activity
+            android:name=".MainScreen"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

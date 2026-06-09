@@ -16,7 +16,6 @@ class Detailscreen : AppCompatActivity() {
         lateinit var TuesdayMinOutput:TextView
         lateinit var WednesdayMinOutput: TextView
         lateinit var ThursdayMinOutput:TextView
-        lateinit var ThursdayMinOutput:TextView
         lateinit var SaturdayMinOutput:TextView
         lateinit var SundayMinOutput:TextView
 
@@ -25,7 +24,6 @@ class Detailscreen : AppCompatActivity() {
         lateinit var WednesdayMaxOutput:TextView
         lateinit var ThursdayMaxOutput:TextView
         lateinit var FridayMaxOutput:TextView
-        lateinit var SaturdayMaxOutput:TextView
         lateinit var SaturdayMaxOutput:TextView
 
         lateinit var MondayConditionOutput:TextView
@@ -39,38 +37,36 @@ class Detailscreen : AppCompatActivity() {
         lateinit var btnBacktomain: Button
 
 
-
-
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_detailscreen)
 
 
-        MondayMinOutput
-         TuesdayMinOutput
-         WednesdayMinOutput
-         ThursdayMinOutput
-         ThursdayMinOutput
-         SaturdayMinOutput
-        SundayMinOutput
+        MondayMinOutput=findViewById(R.id.MondayMinOutput)
+         TuesdayMinOutput=findViewById(R.id.TuesdayMinOutput)
+         WednesdayMinOutput=findViewById(R.id.WednesdayMinOutput)
+         ThursdayMinOutput=findViewById(R.id.)
+         ThursdayMinOutput=findViewById(R.id.)
+         SaturdayMinOutput=findViewById(R.id.)
+        SundayMinOutput=findViewById(R.id.)
 
-       MondayMaxOutput
-         TuesdayMaxOutput
-         WednesdayMaxOutput
-        ThursdayMaxOutput
-         FridayMaxOutput
-         SaturdayMaxOutput
-       SaturdayMaxOutput
+       MondayMaxOutput=findViewById(R.id.)
+         TuesdayMaxOutput=findViewById(R.id.)
+         WednesdayMaxOutput=findViewById(R.id.)
+        ThursdayMaxOutput=findViewById(R.id.)
+         FridayMaxOutput=findViewById(R.id.)
+         SaturdayMaxOutput=findViewById(R.id.)
+       SaturdayMaxOutput=findViewById(R.id.)
 
-      MondayConditionOutput
-         TuesdayConditionOutput
-         WednesdayConditionOutput
-         ThursdayConditionOutput
-         FridayConditionOutput
-         SaturdayConditionOutput
-         SundayConditionOutput
+      MondayConditionOutput=findViewById(R.id.)
+         TuesdayConditionOutput=findViewById(R.id.)
+         WednesdayConditionOutput=findViewById(R.id.)
+         ThursdayConditionOutput=findViewById(R.id.)
+         FridayConditionOutput=findViewById(R.id.)
+         SaturdayConditionOutput=findViewById(R.id.)
+         SundayConditionOutput=findViewById(R.id.)
 
-         btnBacktomain
+         btnBacktomain=findViewById(R.id.)
 
 
     }

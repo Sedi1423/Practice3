@@ -55,7 +55,7 @@ class Detailscreen : AppCompatActivity() {
          TuesdayMinOutput=findViewById(R.id.TuesdayMinOutput)
          WednesdayMinOutput=findViewById(R.id.WednesdayMinOutput)
          ThursdayMinOutput=findViewById(R.id.ThursdayMinOutput)
-         FridayMinOutput=findViewById(R.id.ThursdayMinOutput)
+         FridayMinOutput=findViewById(R.id.FridayMinOutput)
          SaturdayMinOutput=findViewById(R.id.SaturdayMinOutput)
         SundayMinOutput=findViewById(R.id.SundayMinOutput)
 
@@ -83,20 +83,20 @@ class Detailscreen : AppCompatActivity() {
 
          btnBacktomain=findViewById(R.id.btnBacktomain)
 
-        val minTextViews = arrayOf(MondayConditionOutput,
-                TuesdayConditionOutput,
-                WednesdayConditionOutput,
-                ThursdayConditionOutput,
-                FridayConditionOutput,
-                SaturdayConditionOutput,
-                SundayConditionOutput)
-         val maxTextViews= arrayOf(MondayConditionOutput,
-             TuesdayConditionOutput,
-             WednesdayConditionOutput,
-             ThursdayConditionOutput,
-             FridayConditionOutput,
-             SaturdayConditionOutput,
-             SundayConditionOutput)
+        val minTextViews = arrayOf(MondayMinOutput,
+                TuesdayMinOutput,
+                WednesdayMinOutput,
+                ThursdayMinOutput,
+                FridayMinOutput,
+                SaturdayMinOutput,
+                SundayMinOutput)
+         val maxTextViews= arrayOf(MondayMaxOutput,
+             TuesdayMaxOutput,
+             WednesdayMaxOutput,
+             ThursdayMaxOutput,
+             FridayMaxOutput,
+             SaturdayMaxOutput,
+             SundayMaxOutput)
         val conditionTextViews= arrayOf(MondayConditionOutput,
             TuesdayConditionOutput,
             WednesdayConditionOutput,
